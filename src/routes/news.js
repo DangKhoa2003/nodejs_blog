@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
-import NewController from '../app/controller/NewsController';
+const NewController = require('../app/controller/NewsController');
 
 router.use('/', NewController.index);
 
-export default router;
+module.exports = router;

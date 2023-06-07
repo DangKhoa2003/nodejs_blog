@@ -5,7 +5,10 @@ const morgan = require('morgan');
 const app = express();
 const port = 3000;
 
-import route from './routes';
+const route = require('./routes');
+const db = require('./config/db');
+
+db.connect();
 
 app.use(express.static(path.join(__dirname, 'public')));
 // HTTP logger

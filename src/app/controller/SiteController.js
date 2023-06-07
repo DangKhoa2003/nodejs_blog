@@ -1,11 +1,18 @@
-class SiteController {
-    home(req, res) {
-        res.render('home');
-    }
+const Course = require("../models/Course");
 
-    search(req, res) {
-        res.render('search');
-    }
+class SiteController {
+  home(req, res) {
+    Course.find({})
+      .then((courses) => {
+        res.json(courses);
+      })
+      .catch((err) => res.status(400).json({ err: "Error!!!" }));
+    // res.render("home");
+  }
+
+  search(req, res) {
+    res.render("search");
+  }
 }
 
-export default new SiteController();
+module.exports = new SiteController();

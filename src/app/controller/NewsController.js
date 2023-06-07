@@ -8,4 +8,4 @@ class NewController {
     }
 }
 
-export default new NewController();
+module.exports = new NewController();
