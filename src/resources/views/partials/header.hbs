@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">F8 education</a>
+  <div class="container">
+    <a class="navbar-brand" href="/">F8 education</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -12,15 +12,26 @@
     >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-      </ul>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <!-- Example single danger button -->
+      <div class="btn-group">
+        <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          Hello Name ❤️
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="/course/create">Tạo Khóa học</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="/my/stored/course">Khóa học của tôi</a></li>
+          <li><a class="dropdown-item" href="/my/stored/blog">Bài viết của tôi</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+        </ul>
+      </div>
     </div>
   </div>
 </nav>
